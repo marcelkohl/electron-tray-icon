@@ -1,0 +1,25 @@
+{
+  "name": "electron tray icon",
+  "version": "1.0.0",
+  "description": "tray with icon",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "package": "electron-builder",
+    "package:linux": "electron-builder -l",
+    "package:all": "electron-builder -lwm",
+    "deploy:linux": "electron-builder -l --publish always"
+  },
+  "repository": "https://github.com/marcelkohl/electron-tray-icon",
+  "keywords": [
+    "Electron",
+    "Tray"
+  ],
+  "author": "Marcel Kohls <marcel.v.kohls@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^8.5.2",
+    "electron-builder": "^22.3.2"
+  }
+}
